@@ -27,3 +27,20 @@ taskkill /f /t /im [端口号] # Window系统
 ```
 
 [多版本node工具](https://volta.sh/)
+
+```json
+{
+    "volta": {
+        "node": "20.15.0",
+        "yarn": "1.22.22"
+    }
+}
+```
+
+
+curl 调接口 并且通过 json 可以将数据json化 方便查看
+
+```bash
+npm i -g json
+curl [xxx] | json
+```

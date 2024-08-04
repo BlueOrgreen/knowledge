@@ -39,4 +39,19 @@ source ~/.nvm/nvm.sh
 
 # 放置于 .zshrc 中
 
+```json
+{
+    "volta": {
+        "node": "20.15.0",
+        "yarn": "1.22.22"
+    }
+}
+```
+
+
+curl 调接口 并且通过 json 可以将数据json化 方便查看
+
+```bash
+npm i -g json
+curl [xxx] | json
 ```

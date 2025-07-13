@@ -51,3 +51,14 @@ object-fit: fill | contain | cover | none | scale-down;
 | 保证完整展示，宁愿留白         | `contain`    |
 | 不想缩放或变形，只要原图        | `none`       |
 | 简单图片自适应展示           | `scale-down` |
+
+
+## transform不支持inline
+
+背景: 我在对一个 `span` 标签 添加 `transform` 属性后不生效， 最后通过把元素设置成 `inline-block` 后才生效此CSS
+
+```css
+.element {
+    transform: 'translateY(1px)';
+}
+```

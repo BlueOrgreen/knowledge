@@ -55,3 +55,8 @@ curl 调接口 并且通过 json 可以将数据json化 方便查看
 npm i -g json
 curl [xxx] | json
 ```
+
+
+脚本命令库参考学习
+
+https://git.heytea.com/large_front_end/heytea-scripts

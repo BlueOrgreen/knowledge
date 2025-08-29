@@ -11,6 +11,11 @@
 tree -I "node_modules"
 ```
 
+**-L [数字]**  输出目录下[数字]层的文件结构
+```bash
+tree -L 1
+```
+
 
 ## 进程 命令
 
@@ -60,3 +65,19 @@ curl [xxx] | json
 脚本命令库参考学习
 
 https://git.heytea.com/large_front_end/heytea-scripts
+
+
+## git tag 查看项目的tag
+
+查看tag 并筛选出带 `@heytea/knapsack-components` 前缀的 tag
+
+```bash
+git tag | grep '^@heytea/knapsack-components'
+```
+
+## 删除 tag
+
+```bash
+git tag -d @heytea/knapsack-components@2.0.0-beta.2
+```
+

@@ -206,3 +206,36 @@ const descriptor = Object.getOwnPropertyDescriptor(obj, "name");
 console.log(descriptor);
 // 输出: { value: "Alice", writable: true, enumerable: true, configurable: true }
 ```
+
+## 判断某个对象是否存在某个key
+
+使用 `in` 操作符
+
+```tsx
+const obj = { name: 'Tom', age: 18 };
+
+if ('name' in obj) {
+  console.log('存在 name 属性');
+}
+```
+
+
+使用 `Object.prototype.hasOwnProperty.call(...)`
+
+```tsx
+if (Object.prototype.hasOwnProperty.call(obj, 'name')) {
+  console.log('存在 name 属性');
+}
+```
+
+
+使用 `Reflect.has(target, propertyKey)`
+
+```tsx
+const obj = { name: 'Tom' };
+
+if (Reflect.has(obj, 'name')) {
+  console.log('存在 name 属性'); // ✅
+}
+```
+
